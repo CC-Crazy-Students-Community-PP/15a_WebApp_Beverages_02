@@ -55,7 +55,7 @@
 
         // 1. ggf. child-Elemente löschen
         while ( imgWrapper.children.length > 0 ) {
-            imgWrapper.removeChild(i mgWrapper.children[ 0 ] );
+            imgWrapper.removeChild( imgWrapper.children[ 0 ] );
         }
 
         // 2. img-Elemente erzeugen & als Child in Wrapper einhängen
