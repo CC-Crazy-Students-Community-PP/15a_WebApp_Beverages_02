@@ -1,14 +1,3 @@
-
-/* View */
-
-/*
-    Einlesen Daten von Webseite 
-    Check Input
-    Btn. Trigger 
-    update Bilder
-    update Txt
-*/
-
 /* Trigger Btn */
     let btn = gui.dom.btn 
     btn.addEventListener( "click", actOnClick )
@@ -31,7 +20,7 @@
     //ausgabe(isInputValid());
     function isInputValid() {                   // Frage: Is input valid?
         let inputStr = gui.dom.field.value;     // verweis auf obj
-        let patt = /^[0-9]{1,3}$/g;             //max 3 Ziffern zugelassen
+        let patt = /^[0-9]{1,3}$/g;             // max 3 Ziffern zugelassen
         let cond = patt.test( inputStr );
         if (!cond) {
             gui.dom.field.value = "";
